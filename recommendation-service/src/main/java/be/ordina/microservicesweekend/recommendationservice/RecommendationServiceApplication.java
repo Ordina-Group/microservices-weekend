@@ -84,7 +84,8 @@ public class RecommendationServiceApplication implements CommandLineRunner {
 	}
 }
 
-@Repository interface RecommendationRepository extends JpaRepository<Recommendation, String> {
+@Repository interface RecommendationRepository extends JpaRepository<Recommendation, Long> {
 
 	List<Recommendation> findAllByMovieId(String movieId);
 }
+
