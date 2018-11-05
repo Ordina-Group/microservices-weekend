@@ -1,3 +1,12 @@
 spring:
   application:
     name: movie-service
+  jmx:
+    enabled: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+logging:
+  level:
+    com.netflix.discovery: DEBUG

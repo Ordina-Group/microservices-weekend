@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerExchangeFilterFunction;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.HystrixCommands;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +28,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/movie")
 @EnableCircuitBreaker
-@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
 public class MovieServiceApplication {
 

@@ -1,3 +1,8 @@
 spring:
   application:
     name: registry-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
