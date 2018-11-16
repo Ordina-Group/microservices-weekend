@@ -10,3 +10,5 @@ eureka:
 logging:
   level:
     com.netflix.discovery: DEBUG
+server:
+  port: 8081
