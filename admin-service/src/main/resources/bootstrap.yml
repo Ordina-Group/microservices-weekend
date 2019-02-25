@@ -1,3 +1,5 @@
 spring:
   application:
     name: admin-service
+server:
+  port: 8083

@@ -1,3 +1,9 @@
 spring:
   application:
     name: recommendation-service
+management:
+  endpoint:
+    health:
+      show-details: always
+server:
+  port: 8085
